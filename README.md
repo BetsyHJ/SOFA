@@ -48,6 +48,13 @@ Now that you're more familiar with your Bitbucket repository, go ahead and add a
 This repository is the implementation of [SOFA](https://staff.fnwi.uva.nl/m.derijke/wp-content/papercite-data/pdf/huang-2020-keeping.pdf), the Simulator for OFfline leArning and evaluation.
 > Keeping Dataset Biases out of the Simulation: A Debiased Simulator for Reinforcement Learning based Recommender Systems. Jin Huang, Harrie Oosterhuis, Maarten de Rijke, Herke van Hoof. Recsys 2020.
 
+![](RL4Rec-offline.png)
+
+The framework shows how RL4Rec typically interacts with a simulation-based environment. A state is user historical interactions, an action is an item being recommended bytheRS, and a reward is related to user feedback.
+
+As a solution to the effect of bias present in logged data, we introduce a debiasing step in the simulation pipeline, which corrects for the biases present in the logged data before it is used to simulate user behavior.
+![](IBMS.png)
+
 <!-- ### Files in the folder -->
 
 <!-- ### Required packages -->
@@ -59,7 +66,9 @@ $ python run_dqn.py
 ```
 
 ## More details
-We also provide the details of DQN-based Policy used in experiments and the related hyperparamters (See Appendix).
+We provide the details of DQN-based Policy used in experiments and the related hyperparamters (See [Appendix](https://github.com/BetsyHJ/SOFA/blob/master/appendix.pdf)).
+And we also provide the [slide](https://github.com/BetsyHJ/SOFA/blob/master/recsys20-slides.pdf) used for presentation in recsys 2020.
+
 
 ## Cite
 If you use our code, please cite our paper:
