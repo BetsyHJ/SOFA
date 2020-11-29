@@ -1,4 +1,4 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+<!-- **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
 
@@ -42,14 +42,33 @@ Use these steps to clone from SourceTree, our client for using the repository co
 3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
 4. Open the directory you just created to see your repository’s files.
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ). -->
+
 # SOFA
-This repository is the implementation of SOFA, the Simulator for OFfline leArning and evaluation.
+This repository is the implementation of [SOFA](https://staff.fnwi.uva.nl/m.derijke/wp-content/papercite-data/pdf/huang-2020-keeping.pdf), the Simulator for OFfline leArning and evaluation.
+> Keeping Dataset Biases out of the Simulation: A Debiased Simulator for Reinforcement Learning based Recommender Systems. Jin Huang, Harrie Oosterhuis, Maarten de Rijke, Herke van Hoof. Recsys 2020.
 
-### Files in the folder
+<!-- ### Files in the folder -->
 
-### Required packages
+<!-- ### Required packages -->
 
-### Running the code
+## Running the code
+```
+$ cd examples
+$ python run_dqn.py
+```
 
-### More details
+## More details
+We also provide the details of DQN-based Policy used in experiments and the related hyperparamters (See Appendix).
+
+## Cite
+If you use our code, please cite our paper:
+```
+@inproceedings{huang2020keeping,
+  title={Keeping Dataset Biases out of the Simulation: A Debiased Simulator for Reinforcement Learning based Recommender Systems},
+  author={Huang, Jin and Oosterhuis, Harrie and de Rijke, Maarten and van Hoof, Herke},
+  booktitle={Fourteenth ACM Conference on Recommender Systems},
+  pages={190--199},
+  year={2020}
+}
+```
